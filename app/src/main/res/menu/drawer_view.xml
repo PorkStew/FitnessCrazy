@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group
+    android:checkableBehavior="single">
+    <item
+        android:title="Home"
+        android:id="@+id/Home"
+        android:icon="@drawable/ic_home_black_24dp"
+        />
+    <item
+        android:title="Profile"
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_action_settings"
+        />
+    <item
+        android:title="Track Steps"
+        android:id="@+id/TrackSteps"
+        android:icon="@drawable/ic_directions_walk_black_24dp"
+        />
+    <item
+        android:title="Weight Progress"
+        android:id="@+id/WeightProgress"
+        android:icon="@drawable/ic_fitness_center_black_24dp"
+        />
+    <item
+        android:title="Height Progress"
+        android:id="@+id/HeightProgress"
+        android:icon="@drawable/ic_person_pin_black_24dp"
+        />
+    <item
+        android:title="Weight Log"
+        android:id="@+id/WeightLogs"
+        android:icon="@drawable/ic_storage_black_24dp"
+        />
+    <item
+        android:title="Height Log"
+        android:id="@+id/HeightLogs"
+        android:icon="@drawable/ic_storage_black_24dp"
+        />
+    <item
+        android:title="Goals"
+        android:id="@+id/Goals"
+        android:icon="@drawable/ic_golf_course_black_24dp"
+        />
+    <item
+        android:title="Photos"
+        android:id="@+id/Photo"
+        android:icon="@drawable/ic_photo_camera_black_24dp"
+        />
+    <item
+        android:title="Logout"
+        android:id="@+id/Logout"
+        android:icon="@drawable/ic_exit_to_app_black_24dp"
+        />
+    <item
+        android:title="About"
+        android:id="@+id/About"
+        android:icon="@drawable/ic_exit_to_app_black_24dp"
+        />
+
+</group>
+</menu>

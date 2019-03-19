@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuFragment"
+    android:id="@+id/drawerLayout"
+    android:background="@drawable/gradient">
+
+    <!-- TODO: Update blank fragment layout -->
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/daily_information"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="40sp" />
+
+</FrameLayout>
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="311dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="22dp"
+        android:text="@string/make_hard_boiled_eggs_at_the_beginning_of_the_week_for_a_ready_to_grab_protein_packed_snack_you_can_eat_by_itself_or_add_to_other_items_like_avocado_toast"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView133"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView133"
+        android:layout_width="311dp"
+        android:layout_height="167dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="22dp"
+        android:text="@string/be_prepared_for_hunger_to_strike_when_on_the_go_keep_non_perishable_healthy_snacks_on_hand_in_your_gym_bag_and_purse_this_way_you_can_always_have_a_healthy_option_you_can_turn_to_when_in_a_pinch"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/dev"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/dev"
+        android:layout_width="311dp"
+        android:layout_height="167dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="48dp"
+        android:text="@string/develop_a_positive_attitude_your_thoughts_determine_how_you_feel_and_often_determine_what_you_can_accomplish_as_napoleon_once_said_what_your_mind_can_conceive_and_believe_you_can_achieve"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView133" />
+
+</android.support.constraint.ConstraintLayout>
+<android.support.design.widget.NavigationView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:id="@+id/nav_view"
+    app:menu="@menu/drawer_view"
+    app:headerLayout="@layout/header_view"
+    android:layout_gravity="start"/>
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuFragment"
+    android:id="@+id/drawerLayout"
+    android:background="@drawable/gradient">
+
+    <!-- TODO: Update blank fragment layout -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="40sp" />
+
+    </FrameLayout>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="311dp"
+            android:layout_height="186dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginBottom="288dp"
+            android:text="@string/this_app_is_designed_with_android_studio_2018_using_the_marshmallow_firmware_suporoting_the_phone_nexus_6_under_the_copy_right_act_may_this_not_be_used_differently_or_copied_for_another_purpose"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="311dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginBottom="478dp"
+            android:text="@string/_0_0_2"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="311dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginBottom="498dp"
+            android:text="@string/version"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        app:menu="@menu/drawer_view"
+        app:headerLayout="@layout/header_view"
+        android:layout_gravity="start"/>
+
+</android.support.v4.widget.DrawerLayout>
